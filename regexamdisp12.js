@@ -156,7 +156,26 @@ document.getElementById("load-prev").addEventListener("click", () => {
 
 document.getElementById("submit").addEventListener("click", () => {
   if (time != 0){
-  if (confirm("Are you sure? Do you want to Submit while you have time?")) {
+    if (confirm("Are you sure? Do you want to Submit while you have time?")) {
+      for (i = 0; i < questionObjArr.length; i++) {
+        totScore = totScore + questionObjArr[i].score;
+        if(questionObjArr[i].score == 4)
+        correctAttempt = correctAttempt + 1;
+        else if(questionObjArr[i].score == -1)
+        wrongAttempt = wrongAttempt + 1;
+      }
+      studentData.push(totScore);
+      studentData.push(correctAttempt);
+      studentData.push(wrongAttempt);
+      document.querySelector('.reportName').innerHTML = " " + studentData[0].studentFirstName+ " " + studentData[0].studentLastName;
+      document.querySelector('.reportMarks').innerHTML = studentData[1];
+      document.querySelector('.reportCorrect').innerHTML = studentData[2];
+      document.querySelector('.reportIncorrect').innerHTML = studentData[3];
+      document.body.classList.toggle('finalDisplay');
+      window.location.href = "#";
+    }
+  }
+  else{
     for (i = 0; i < questionObjArr.length; i++) {
         totScore = totScore + questionObjArr[i].score;
         if(questionObjArr[i].score == 4)
@@ -164,24 +183,16 @@ document.getElementById("submit").addEventListener("click", () => {
         else if(questionObjArr[i].score == -1)
         wrongAttempt = wrongAttempt + 1;
     }
-  }}
-  else{
-    for (i = 0; i < questionObjArr.length; i++) {
-        totScore = totScore + questionObjArr[i].score;
-        if(questionObjArr[i].score == 4)
-        correctAttempt = correctAttempt + 1;
-        else if(questionObjArr[i].score == -1)
-        wrongAttempt = wrongAttempt + 1; 
-  }}
-  studentData.push(totScore);
-  studentData.push(correctAttempt);
-  studentData.push(wrongAttempt);
-  document.querySelector('.reportName').innerHTML = " " + studentData[0].studentFirstName+ " " + studentData[0].studentLastName;
-  document.querySelector('.reportMarks').innerHTML = studentData[1];
-  document.querySelector('.reportCorrect').innerHTML = studentData[2];
-  document.querySelector('.reportIncorrect').innerHTML = studentData[3];
-  document.body.classList.toggle('finalDisplay');
-  window.location.href = "#";  
+    studentData.push(totScore);
+    studentData.push(correctAttempt);
+    studentData.push(wrongAttempt);
+    document.querySelector('.reportName').innerHTML = " " + studentData[0].studentFirstName+ " " + studentData[0].studentLastName;
+    document.querySelector('.reportMarks').innerHTML = studentData[1];
+    document.querySelector('.reportCorrect').innerHTML = studentData[2];
+    document.querySelector('.reportIncorrect').innerHTML = studentData[3];
+    document.body.classList.toggle('finalDisplay');
+    window.location.href = "#"; 
+  }
 });
 
 document.querySelector('.redirectPage').addEventListener('click', ()=>{
