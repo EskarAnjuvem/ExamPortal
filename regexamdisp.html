@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Luck!</title>
+    <link rel="stylesheet" href="regexamdisp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputdata">
+            <div class="instructions">
+                <p>Enter Your Name Before Proceeding to take the exam.</p>
+                <p>A timer will start automatically once you click START EXAM button.</p>    
+                <p>Don't reload the page once exam starts, or you will lose all progress 
+                and will be redirected to this page.</p>
+            </div>          
+            <input type="text" name="firstName" class="personName fName" placeholder="First Name">
+            <input type="text" name="lastName" class="personName lName" placeholder="Last Name">
+            <button class="submitData">start exam</button>
+        </div>
+        <div class="questions">
+            <p id="countdown"></p>
+            <div class="questionBox">
+                <div class="contain" id="contain">
+                    <img src="./Vectors-1/Q1.jpg" alt="" class="question" id="qImage">
+                </div>
+                <div class="messageChoice">
+                    <h3>Your answer for this Question : <span id="choice">Not Answered</span></h3>
+                </div>
+                <div class="options-box">
+                    <span><input type="radio" name="option" id="unchck1" value="A"><label for="unchck1">A</label></span>
+                    <span><input type="radio" name="option" id="unchck2" value="B"><label for="unchck2">B</label></span>
+                    <span><input type="radio" name="option" id="unchck3" value="C"><label for="unchck3">C</label></span>
+                    <span><input type="radio" name="option" id="unchck4" value="D"><label for="unchck4">D</label></span>
+                </div>
+                <div class="submit-box">
+                    <button class = "todoButtons" id="saveAnswer">Save Answer</button>
+                    <button class = "todoButtons" id="clear">Clear Choices</button>
+                </div>
+                <div class="fwd-bwd">
+                    <button class = "todoButtons" id="load-next">Next Question</button>
+                    <button class = "todoButtons" id="load-prev">Previous Question</button>
+                </div>
+            </div>
+            <div class="Final">
+                <button id="submit" href="#"><p>SUBMIT THIS PAPER</p></button>
+            </div>
+            
+        </div>
+        <div class="show-data-score">
+            <div class="report">
+                <div class="rowReport">
+                    <h2>Name: &nbsp;</h2>
+                    <h2 class="reportName">Sanjeev Kumar</h2>
+                </div>
+                <div class="rowReport">
+                    <h2>Marks:</h2>
+                    <h2 class="reportMarks">32</h2>
+                </div>
+                <div class="rowReport">
+                    <h2>Correct:</h2>
+                    <h2 class="reportCorrect">10</h2>
+                </div>
+                <div class="rowReport">
+                    <h2>Incorrect:</h2>
+                    <h2 class="reportIncorrect">8</h2>
+                </div>
+            </div>
+            <button class="redirectPage">OK</button>
+            
+        </div>
+    </div>
+    <script src="regexamdisp.js"></script>
+</body>
+</html>
