@@ -129,3 +129,17 @@ a .buttons{
         opacity:1;transform: translate(0);
     }
 }
+
+@media (max-width:700px){
+    body{
+        border:solid 2px forestgreen;
+        padding:3vw 10vw;
+    }
+    .buttonflex{
+        margin:-30px 0 0 0;
+        padding:0px 10px;
+    }
+    .subject{
+        padding:0 10px 5px 0;
+    }
+}
