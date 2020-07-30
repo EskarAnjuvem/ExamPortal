@@ -20,7 +20,8 @@ body{
     background-color: rgb(255, 255, 255);
     /* margin:30px 100px; */
     /* padding:20px 0px; */
-    transform: translateX(0%);
+    /* transform: translateX(0%); */
+    margin:0px;
     position: absolute;
     top:0px; bottom:0px;
     left:0px; right:0px;
@@ -31,10 +32,11 @@ body{
     justify-content: flex-start;
     align-items: center;
     user-select: none;
+    /* border: solid 2px lime; */
 }
 .inputdata .instructions{
     font-family: cursive;color: mediumblue;
-    border: solid 2px green;
+    /* border: solid 2px green; */
     padding:10px 20%;
     display: flex;
     flex-flow: column nowrap;
@@ -338,5 +340,21 @@ body{
   max-height: 100%;
   display: block;
 
+}
+}
+@media (max-width:630px){
+  .container .inputdata{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 500px;
+    top:0px; bottom:0px;
+    left:50px;
+    right:50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    user-select: none;
+    border: solid 2px rgb(31, 22, 160);
 }
 }
