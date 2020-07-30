@@ -2,7 +2,7 @@ const submit = document.querySelector(".submitData");
 const showName= document.querySelector(".showName");
 const showScore= document.querySelector(".showScore");
 const countDown = document.getElementById('countdown');
-const startminutes = 10;
+const startminutes = 45;
 let time = startminutes*60;
 var studentData = [];
 var totScore = 0,wrongAttempt = 0, correctAttempt = 0;
