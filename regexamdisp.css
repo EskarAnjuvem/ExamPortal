@@ -6,6 +6,8 @@ body{
     text-align: center;
     /* min-height: 100vh; */
     user-select: none;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .container{
     margin:10px;
@@ -22,11 +24,11 @@ body{
     position: absolute;
     top:0px; bottom:0px;
     left:0px; right:0px;
-    border: solid 2px pink;
+    /* border: solid 2px pink; */
     /* padding:10% 10%; */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     user-select: none;
 }
@@ -36,7 +38,7 @@ body{
     padding:10px 20%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .inputdata .instructions p{
@@ -107,7 +109,7 @@ body{
     padding:2% 2%;
     position: absolute;
     border-radius: 50px;
-    /* border:solid 2px; */
+    border:solid 2px;
     top:20px; 
     /* bottom:0px; */
     left:20%; right:20%;
@@ -300,9 +302,11 @@ body{
       background-color: rgb(75, 119, 201);
   }
 
-  @media (max-width:700px) {
-    .container{
-      margin:10px;
-      
+  @media (max-width:700px){
+    body{
+        /* margin-top: 10px; */
+        /* border:solid 2px forestgreen; */
+        /* padding:3vw 3vw; */
     }
-  }
+       
+}

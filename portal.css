@@ -12,7 +12,8 @@ body{
     min-height:100vh;
     padding:10vw;
     border:solid 2px;
-    overflow:hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .exam-portal{
