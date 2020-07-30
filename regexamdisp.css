@@ -125,7 +125,7 @@ body{
     z-index:-200;
     opacity: 0;
     box-shadow: 4px 6px 10px 5px darkgray;
-    transition: all 250ms ease-in;
+    transition: all 400ms ease-in;
 }
 .show-data-score .report .rowReport {
   display:flex;
