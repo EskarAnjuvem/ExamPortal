@@ -29,7 +29,7 @@ body{
     border-radius: 20px;
     box-shadow: 10px 6px 10px 5px rgb(150, 149, 149);
     position: relative;
-    left:10%;
+    /* left:10%; */
     animation-name: moveInLeft;
     animation-duration: 1s;
 }
@@ -62,7 +62,7 @@ body{
     padding: 8px 12px;
     border-radius: 25px;
     border:none;
-    box-shadow: 4px 4px 7px 4px rgb(180, 180, 180);    
+    box-shadow: 4px 4px 7px 4px rgb(180, 180, 180);
     background: linear-gradient(#c4e7c3, #63b48c);
     transition: all 150ms ease-in;
     animation-name: moveInBottom;
@@ -91,7 +91,7 @@ a .buttons{
         transform: translateX(50px);
     }
     100%{
-        opacity:1;transform: translate(0);
+        opacity:1;transform: translateX(0);
     }
 }
 @keyframes moveInRight{
@@ -131,7 +131,7 @@ a .buttons{
     }
 }
 
-@media (max-width:700px){
+@media (min-width:524px) and (max-width:600px){
     body{
         border:solid 2px forestgreen;
         padding:3vw 10vw;
@@ -142,5 +142,63 @@ a .buttons{
     }
     .subject{
         padding:0 10px 5px 0;
+    }
+}
+@media (max-width:523px){
+    body{
+        margin:0px;
+        border:solid 2px rgb(54, 87, 5);
+        padding:3vw 3vw;
+        user-select: none;
+        background-color: rgb(255, 255, 255);
+        min-height:100vh;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .header{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exam-portal{
+        background-color: rgb(153, 216, 192);
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 2.5em;
+        font-family: 'Varela Round' ,Arial rounded MT , sans-serif;
+        font-weight: bold;
+        color: whitesmoke;
+        height:110px;
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 10px 6px 10px 5px rgb(150, 149, 149);
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+    }
+    .buttonflex{
+        margin:10px 0 0 0;
+        padding:0px 10px;
+    }
+    .subject{
+        padding:5px 20px;
+        background-color: rgba(153, 153, 216,0.9);
+        text-align: right;
+        letter-spacing: 3px;
+        font-size: 1.2em;
+        font-family: 'Varela Round' ,Arial rounded MT , sans-serif;
+        font-weight: bold;
+        color: whitesmoke;
+        position: relative;
+        top:0px;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        margin:20px 0px;
+    }
+}
+@media (min-width:600px){
+    .subject{
+        clip-path: polygon(100% 0, 80% 40%, 100% 100%, 0 100%,0 0);
     }
 }
