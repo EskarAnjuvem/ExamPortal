@@ -32,21 +32,21 @@ function Question(qPic, crOption, ansOption, markState, score) {
   this.score = score;
 }
 
-var q1 = new Question("Q1.jpg", "C", "Not Answered", false, 0);
-var q2 = new Question("Q2.jpg", "D", "Not Answered", false, 0);
-var q3 = new Question("Q3.jpg", "C", "Not Answered", false, 0);
-var q4 = new Question("Q4.jpg", "C", "Not Answered", false, 0);
-var q5 = new Question("Q5.jpg", "A", "Not Answered", false, 0);
-var q6 = new Question("Q6.jpg", "B", "Not Answered", false, 0);
-var q7 = new Question("Q7.jpg", "C", "Not Answered", false, 0);
-var q8 = new Question("Q8.jpg", "D", "Not Answered", false, 0);
+var q1 = new Question("Q1.jpg", "D", "Not Answered", false, 0);
+var q2 = new Question("Q2.jpg", "C", "Not Answered", false, 0);
+var q3 = new Question("Q3.jpg", "A", "Not Answered", false, 0);
+var q4 = new Question("Q4.jpg", "A", "Not Answered", false, 0);
+var q5 = new Question("Q5.jpg", "B", "Not Answered", false, 0);
+var q6 = new Question("Q6.jpg", "C", "Not Answered", false, 0);
+var q7 = new Question("Q7.jpg", "D", "Not Answered", false, 0);
+var q8 = new Question("Q8.jpg", "C", "Not Answered", false, 0);
 var q9 = new Question("Q9.jpg", "B", "Not Answered", false, 0);
-var q10 = new Question("Q10.jpg", "A", "Not Answered", false, 0);
-var q11 = new Question("Q11.jpg", "D", "Not Answered", false, 0);
-var q12 = new Question("Q12.jpg", "B", "Not Answered", false, 0);
+var q10 = new Question("Q10.jpg", "B", "Not Answered", false, 0);
+var q11 = new Question("Q11.jpg", "A", "Not Answered", false, 0);
+var q12 = new Question("Q12.jpg", "C", "Not Answered", false, 0);
 var q13 = new Question("Q13.jpg", "D", "Not Answered", false, 0);
-var q14 = new Question("Q14.jpg", "D", "Not Answered", false, 0);
-var q15 = new Question("Q15.jpg", "C", "Not Answered", false, 0);
+var q14 = new Question("Q14.jpg", "C", "Not Answered", false, 0);
+var q15 = new Question("Q15.jpg", "B", "Not Answered", false, 0);
 var questionObjArr = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15];
 
 document.getElementById("saveAnswer").addEventListener("click", () => {
@@ -106,7 +106,7 @@ document.getElementById("load-next").addEventListener("click", () => {
             choices[i].checked = false;
         } 
     }  
-  document.getElementById("qImage").src = `./Kinematics-1/${questionObjArr[qNum].qPic}`;
+  document.getElementById("qImage").src = `./NLM,Kinematics/${questionObjArr[qNum].qPic}`;
   if (qNum == questionObjArr.length - 1)
   document.getElementById("load-next").disabled = true;
 });
@@ -134,7 +134,7 @@ document.getElementById("load-prev").addEventListener("click", () => {
     document.getElementById("unchck3").checked = false;
     document.getElementById("unchck4").checked = false;
   }
-  document.getElementById("qImage").src = `./Kinematics-1/${questionObjArr[qNum].qPic}`;
+  document.getElementById("qImage").src = `./NLM,Kinematics/${questionObjArr[qNum].qPic}`;
   if (qNum == 0)
     document.getElementById("load-prev").disabled = true;
   document.getElementById("load-next").disabled = false;
