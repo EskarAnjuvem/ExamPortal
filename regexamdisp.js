@@ -47,6 +47,9 @@ var q12 = new Question("Q12.jpg", "C", "Not Answered", false, 0);
 var q13 = new Question("Q13.jpg", "D", "Not Answered", false, 0);
 var q14 = new Question("Q14.jpg", "C", "Not Answered", false, 0);
 var q15 = new Question("Q15.jpg", "B", "Not Answered", false, 0);
+var q16 = new Question("Q16.jpg", "B", "Not Answered", false, 0);
+var q17 = new Question("Q17.jpg", "B", "Not Answered", false, 0);
+var q18 = new Question("Q18.jpg", "B", "Not Answered", false, 0);
 var questionObjArr = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15];
 
 document.getElementById("saveAnswer").addEventListener("click", () => {
