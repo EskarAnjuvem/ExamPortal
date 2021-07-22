@@ -50,7 +50,6 @@ var q15 = new Question("Q15.jpg", "B", "Not Answered", false, 0);
 var q16 = new Question("Q16.jpg", "B", "Not Answered", false, 0);
 var q17 = new Question("Q17.jpg", "B", "Not Answered", false, 0);
 var q18 = new Question("Q18.jpg", "B", "Not Answered", false, 0);
-var questionObjArr = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15];
 
 document.getElementById("saveAnswer").addEventListener("click", () => {
   var saveButton = document.getElementById("saveAnswer");
