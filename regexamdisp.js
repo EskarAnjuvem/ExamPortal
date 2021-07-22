@@ -109,7 +109,7 @@ document.getElementById("load-next").addEventListener("click", () => {
             choices[i].checked = false;
         } 
     }  
-  document.getElementById("qImage").src = `./NLM,Kinematics/${questionObjArr[qNum].qPic}`;
+  document.getElementById("qImage").src = `./Batch23-1/${questionObjArr[qNum].qPic}`;
   if (qNum == questionObjArr.length - 1)
   document.getElementById("load-next").disabled = true;
 });
@@ -137,7 +137,7 @@ document.getElementById("load-prev").addEventListener("click", () => {
     document.getElementById("unchck3").checked = false;
     document.getElementById("unchck4").checked = false;
   }
-  document.getElementById("qImage").src = `./NLM,Kinematics/${questionObjArr[qNum].qPic}`;
+  document.getElementById("qImage").src = `./Batch23-1/${questionObjArr[qNum].qPic}`;
   if (qNum == 0)
     document.getElementById("load-prev").disabled = true;
   document.getElementById("load-next").disabled = false;
