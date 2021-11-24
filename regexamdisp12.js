@@ -5,22 +5,22 @@ const showScore= document.querySelector(".showScore");
 const countDown = document.getElementById('countdown');
 
 /**************Timer Variables, Student Data stored within Array: Name as Object,Score,Number of Correct and Wrong Answered questions*******/
-const startminutes = 45;
+const startminutes = 120;
 let time = startminutes*60;
 var studentData = [];
 var totScore = 0,wrongAttempt = 0, correctAttempt = 0;
 /********************Variable for Question Number used to pick Questions from Array questionObjArr : Array of Question Objects*********/
 var qNum = 0; 
 var q1 = new Question("Q1.jpg", "C", "Not Answered", false, 0);
-var q2 = new Question("Q2.jpg", "B", "Not Answered", false, 0);
-var q3 = new Question("Q3.jpg", "A", "Not Answered", false, 0);
-var q4 = new Question("Q4.jpg", "D", "Not Answered", false, 0);
+var q2 = new Question("Q2.jpg", "A", "Not Answered", false, 0);
+var q3 = new Question("Q3.jpg", "D", "Not Answered", false, 0);
+var q4 = new Question("Q4.jpg", "B", "Not Answered", false, 0);
 var q5 = new Question("Q5.jpg", "A", "Not Answered", false, 0);
-var q6 = new Question("Q6.jpg", "B", "Not Answered", false, 0);
+var q6 = new Question("Q6.jpg", "D", "Not Answered", false, 0);
 var q7 = new Question("Q7.jpg", "B", "Not Answered", false, 0);
-var q8 = new Question("Q8.jpg", "D", "Not Answered", false, 0);
-var q9 = new Question("Q9.jpg", "A", "Not Answered", false, 0);
-var q10 = new Question("Q10.jpg", "B", "Not Answered", false, 0);
+var q8 = new Question("Q8.jpg", "B", "Not Answered", false, 0);
+var q9 = new Question("Q9.jpg", "D", "Not Answered", false, 0);
+var q10 = new Question("Q10.jpg", "A", "Not Answered", false, 0);
 var q11 = new Question("Q11.jpg", "C", "Not Answered", false, 0);
 var q12 = new Question("Q12.jpg", "A", "Not Answered", false, 0);
 var q13 = new Question("Q13.jpg", "B", "Not Answered", false, 0);
