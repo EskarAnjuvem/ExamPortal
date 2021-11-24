@@ -26,6 +26,21 @@ var q12 = new Question("Q12.jpg", "A", "Not Answered", false, 0);
 var q13 = new Question("Q13.jpg", "B", "Not Answered", false, 0);
 var q14 = new Question("Q14.jpg", "A", "Not Answered", false, 0);
 var q15 = new Question("Q15.jpg", "D", "Not Answered", false, 0);
+var q16 = new Question("Q16.jpg", "C", "Not Answered", false, 0);
+var q17 = new Question("Q17.jpg", "B", "Not Answered", false, 0);
+var q18 = new Question("Q18.jpg", "A", "Not Answered", false, 0);
+var q19 = new Question("Q19.jpg", "D", "Not Answered", false, 0);
+var q20 = new Question("Q20.jpg", "A", "Not Answered", false, 0);
+var q21 = new Question("Q21.jpg", "B", "Not Answered", false, 0);
+var q22 = new Question("Q22.jpg", "B", "Not Answered", false, 0);
+var q23 = new Question("Q23.jpg", "D", "Not Answered", false, 0);
+var q24 = new Question("Q24.jpg", "A", "Not Answered", false, 0);
+var q25 = new Question("Q25.jpg", "B", "Not Answered", false, 0);
+var q26 = new Question("Q26.jpg", "C", "Not Answered", false, 0);
+var q27 = new Question("Q27.jpg", "A", "Not Answered", false, 0);
+var q28 = new Question("Q28.jpg", "B", "Not Answered", false, 0);
+var q29 = new Question("Q29.jpg", "A", "Not Answered", false, 0);
+var q30 = new Question("Q30.jpg", "D", "Not Answered", false, 0);
 var questionObjArr = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15];
 /***********************Each Question is an Object: Question Object Constructor Function ***************************/
 function Question(qPic, crOption, ansOption, markState, score) {
@@ -125,7 +140,7 @@ document.getElementById("load-next").addEventListener("click", () => {
             choices[i].checked = false;
         } 
     }  
-  document.getElementById("qImage").src = `./Basic-Capacitor,Current/${questionObjArr[qNum].qPic}`;
+  document.getElementById("qImage").src = `./Electromag/${questionObjArr[qNum].qPic}`;
   if (qNum == questionObjArr.length - 1)
   document.getElementById("load-next").disabled = true;
 });
@@ -153,7 +168,7 @@ document.getElementById("load-prev").addEventListener("click", () => {
     document.getElementById("unchck3").checked = false;
     document.getElementById("unchck4").checked = false;
   }
-  document.getElementById("qImage").src = `./Basic-Capacitor,Current/${questionObjArr[qNum].qPic}`;
+  document.getElementById("qImage").src = `./Electromag/${questionObjArr[qNum].qPic}`;
   if (qNum == 0)
     document.getElementById("load-prev").disabled = true;
   document.getElementById("load-next").disabled = false;
