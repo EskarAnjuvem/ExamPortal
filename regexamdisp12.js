@@ -5,7 +5,7 @@ const showScore= document.querySelector(".showScore");
 const countDown = document.getElementById('countdown');
 
 /**************Timer Variables, Student Data stored within Array: Name as Object,Score,Number of Correct and Wrong Answered questions*******/
-const startminutes = 120;
+const startminutes = 90;
 let time = startminutes*60;
 var studentData = [];
 var totScore = 0,wrongAttempt = 0, correctAttempt = 0;
